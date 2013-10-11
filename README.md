@@ -1,4 +1,4 @@
-charleslindsay
+Angular Sandbox
 ==============
 
-Charles Lindsay App Engine
+Just for fun
