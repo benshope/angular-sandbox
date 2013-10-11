@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>App Engine CMS</title>
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
+</head>
+<body>
+
+
+  <div ng-app="">
+  <input type="text" ng-model="data.message">
+  <h1>{{data.message}}</h1>
+  <div ng-controller="FirstController">
+      <input type="text" ng-model="data.message">
+      <h1>{{data.message}}</h1>
+  </div>
+  <div ng-controller="SecondController">
+      <input type="text" ng-model="data.message">
+      <h1>{{data.message}}</h1>
+  </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.4.0.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
