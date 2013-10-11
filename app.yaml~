@@ -1,0 +1,31 @@
+application: angular-sandbox
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /favicon\.ico
+  static_files: static/img/favicon.ico
+  upload: static/img/favicon.ico
+- url: /css
+  static_dir: static/css
+- url: /html
+  static_dir: static/html
+- url: /img
+  static_dir: static/img
+- url: /js
+  static_dir: static/js
+- url: /json/.*
+  script: main.app
+- url: /user/.*
+  script: main.app
+- url: .*
+  script: main.app
+# - url: .*
+#   static_files: static/html/index.html
+#   upload: static/html/index.html
+
+libraries:
+- name: webapp2
+  version: latest
