@@ -1,4 +1,4 @@
 Angular Sandbox
 ==============
 
-Just for fun
+Just for fun, testing and learning AngularJS
